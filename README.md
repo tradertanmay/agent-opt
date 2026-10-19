@@ -55,21 +55,24 @@ npm run demo
 
 ## 3. Installation
 
-### Option A: Install from Source (Available Today)
+### Option A: Direct Install from GitHub Release (`v0.1.0` — Available Today)
+```bash
+npm install https://github.com/tradertanmay/agent-opt/releases/download/v0.1.0/agent-opt-0.1.0.tgz
+npx agent-opt init
+```
+
+### Option B: Install from Source Clone
 ```bash
 git clone https://github.com/tradertanmay/agent-opt.git
 cd agent-opt
-npm install && npm run build
-
-# Link `aopt` / `agent-opt` globally on your machine:
-npm link
+npm install && npm run build && npm link
 
 # Initialize inside any repository (interactive or --yes for all detected agents):
 cd /path/to/your-project
 aopt init
 ```
 
-### Option B: Via `npx` (Once Published to npm)
+### Option C: Via Public npm Registry (Once Published to npm)
 ```bash
 npx agent-opt init
 ```
