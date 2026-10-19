@@ -1,3 +1,5 @@
+![AgentOpt — One Plugin. Smarter Coding Agents. Fewer Tokens.](./assets/banner.png)
+
 # AgentOpt — AI Coding Agent Optimizer (`aopt`)
 
 **One plugin. Smarter coding agents. Fewer tokens.**
