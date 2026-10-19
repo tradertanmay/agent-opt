@@ -47,7 +47,7 @@ npm test
 npm pack --dry-run
 
 # 2. Add your GitHub remote and push main + v0.1.0 tag
-git remote add origin https://github.com/<your-org>/agent-opt.git
+git remote add origin https://github.com/tradertanmay/agent-opt.git
 git push -u origin main
 git tag v0.1.0
 git push origin v0.1.0

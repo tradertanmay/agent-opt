@@ -28,7 +28,7 @@ npx agent-opt init --yes
 
 ### Option B: From Local Source Clone (Immediate Local Usage)
 ```bash
-git clone https://github.com/<org>/agent-opt.git
+git clone https://github.com/tradertanmay/agent-opt.git
 cd agent-opt
 npm install
 npm run build

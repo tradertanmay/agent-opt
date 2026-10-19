@@ -3,4 +3,5 @@ dist/
 .agent-opt/
 .atm/
 *.log
+*.tgz
 .DS_Store
