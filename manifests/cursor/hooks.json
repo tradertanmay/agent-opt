@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "hooks": {
+    "sessionStart": [
+      {
+        "command": "npx agent-opt hook --platform cursor --event SessionStart"
+      }
+    ],
+    "beforeSubmitPrompt": [
+      {
+        "command": "npx agent-opt hook --platform cursor --event UserPromptSubmit"
+      }
+    ],
+    "beforeReadFile": [
+      {
+        "command": "npx agent-opt hook --platform cursor --event PreToolUse"
+      }
+    ],
+    "beforeShellExecution": [
+      {
+        "command": "npx agent-opt hook --platform cursor --event PreToolUse"
+      }
+    ],
+    "afterShellExecution": [
+      {
+        "command": "npx agent-opt hook --platform cursor --event PostToolUse"
+      }
+    ],
+    "afterFileEdit": [
+      {
+        "command": "npx agent-opt hook --platform cursor --event PostToolUse"
+      }
+    ],
+    "stop": [
+      {
+        "command": "npx agent-opt hook --platform cursor --event Stop"
+      }
+    ]
+  }
+}

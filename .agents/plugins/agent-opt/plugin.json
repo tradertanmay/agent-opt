@@ -1,0 +1,12 @@
+{
+  "name": "agent-opt",
+  "displayName": "AgentOpt",
+  "version": "0.1.0",
+  "description": "Make your AI coding agent smarter, faster, and more token-efficient with AST context ranking, duplicate-operation prevention, and optional task verification.",
+  "logo": "assets/logo.svg",
+  "suggestedPrompts": [
+    "Check AgentOpt optimization status and active mode in this repository",
+    "Preview the ranked symbol context map for a bug fix or feature task",
+    "Switch AgentOpt between FAST, BALANCED, and STRICT verification modes"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "agent-opt": {
+    "enabled": true,
+    "PreInvocation": [
+      {
+        "type": "command",
+        "command": "npx agent-opt hook --platform google-antigravity --event PreInvocation",
+        "timeout": 10
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "npx agent-opt hook --platform google-antigravity --event PreToolUse",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "npx agent-opt hook --platform google-antigravity --event PostToolUse",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "type": "command",
+        "command": "npx agent-opt hook --platform google-antigravity --event Stop",
+        "timeout": 10
+      }
+    ]
+  }
+}

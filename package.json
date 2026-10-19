@@ -1,0 +1,53 @@
+{
+  "name": "agent-opt",
+  "version": "0.1.0",
+  "description": "Universal AI Coding Agent Optimizer — Make Claude Code, OpenAI Codex, Cursor, and Google Antigravity more accurate, faster, more reliable, and more token-efficient. No new agent. No workflow migration.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "bin": {
+    "aopt": "./dist/cli/index.js",
+    "agent-opt": "./dist/cli/index.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "!dist/tests/**",
+    "!dist/benchmarks/**",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test dist/tests/**/*.test.js",
+    "benchmark": "npm run build && node dist/benchmarks/run-benchmarks.js",
+    "demo": "npm run build && node dist/examples/demo-60s.js",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "ai-coding-agent",
+    "claude-code",
+    "openai-codex",
+    "cursor",
+    "google-antigravity",
+    "context-optimization",
+    "verification",
+    "token-optimization",
+    "mcp",
+    "developer-tools"
+  ],
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.2"
+  }
+}

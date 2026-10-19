@@ -1,0 +1,121 @@
+{
+  "smoke": [
+    {
+      "platform": "google-antigravity",
+      "displayName": "Google Antigravity",
+      "hostBinaryInstalled": true,
+      "hostVersionInfo": "Google Antigravity 2.0 Active Agent Runtime",
+      "status": "VERIFIED",
+      "statusRationale": "Google Antigravity IDE (v1.107.0) and AGY 2.0 runtime are installed on host; plugin bundle (.agents/plugins/agent-opt), CLI hooks, and live subagent task execution verified end-to-end.",
+      "configFilesCreated": [
+        ".agents/plugins/agent-opt/plugin.json",
+        ".agents/plugins/agent-opt/hooks.json",
+        ".agents/plugins/agent-opt/mcp_config.json",
+        ".agents/plugins/agent-opt/rules/AGENTS.md"
+      ],
+      "configFilesCleanedOnUninstall": true,
+      "hookTests": {
+        "userPromptContextInjected": true,
+        "preToolDuplicateBlocked": true,
+        "stopBlocksUnverifiedCode": true,
+        "stopAllowsVerifiedCode": true,
+        "subprocessLatencyMs": 35.21,
+        "sampleStdoutPayload": "{\"decision\":\"continue\",\"reason\":\"[AgentOpt Task Verification Gate — Status: NOT_VERIFIED] Task NOT_VERIFIED: Source file(s) [src/math.js] were modified after the last verification run (or no tests/build were executed). Run `npm test` to ver",
+        "sampleExitCodeOnBlock": 0
+      },
+      "limitationsObserved": [
+        "AGY subagents invoked via invoke_subagent share parent workspace unless Workspace=\"branch\" is specified."
+      ]
+    },
+    {
+      "platform": "claude-code",
+      "displayName": "Claude Code",
+      "hostBinaryInstalled": false,
+      "hostVersionInfo": "Not installed in PATH on evaluation host",
+      "status": "EXPERIMENTAL",
+      "statusRationale": "All 5 Claude Code lifecycle hooks (.claude/settings.json) pass subprocess stdin/stdout JSON contract verification, but the proprietary `claude` CLI binary is not installed on this evaluation host.",
+      "configFilesCreated": [
+        ".claude/settings.json"
+      ],
+      "configFilesCleanedOnUninstall": true,
+      "hookTests": {
+        "userPromptContextInjected": true,
+        "preToolDuplicateBlocked": true,
+        "stopBlocksUnverifiedCode": true,
+        "stopAllowsVerifiedCode": true,
+        "subprocessLatencyMs": 35.24,
+        "sampleStdoutPayload": "{\"decision\":\"block\",\"reason\":\"[AgentOpt Task Verification Gate — Status: NOT_VERIFIED] Task NOT_VERIFIED: Source file(s) [src/math.js] were modified after the last verification run (or no tests/build were executed). Run `npm test` to verify",
+        "sampleExitCodeOnBlock": 0
+      },
+      "limitationsObserved": [
+        "End-to-end vendor binary execution requires `claude` CLI installed and authenticated with an Anthropic API key."
+      ]
+    },
+    {
+      "platform": "cursor",
+      "displayName": "Cursor",
+      "hostBinaryInstalled": true,
+      "hostVersionInfo": "Cursor 3.18.9 (2ba48ff3f751, arm64)",
+      "status": "EXPERIMENTAL",
+      "statusRationale": "Cursor v3.18.9 binary is installed on host and .cursor/hooks.json + .cursor/mcp.json + .cursor/rules/agent-opt.mdc install cleanly and pass CLI subprocess smoke tests; marked EXPERIMENTAL because Cursor GUI interactive chat cannot be headless-automated without user GUI session.",
+      "configFilesCreated": [
+        ".cursor/hooks.json"
+      ],
+      "configFilesCleanedOnUninstall": true,
+      "hookTests": {
+        "userPromptContextInjected": true,
+        "preToolDuplicateBlocked": true,
+        "stopBlocksUnverifiedCode": true,
+        "stopAllowsVerifiedCode": true,
+        "subprocessLatencyMs": 35.23,
+        "sampleStdoutPayload": "{\"decision\":\"block\",\"reason\":\"[AgentOpt Task Verification Gate — Status: NOT_VERIFIED] Task NOT_VERIFIED: Source file(s) [src/math.js] were modified after the last verification run (or no tests/build were executed). Run `npm test` to verify",
+        "sampleExitCodeOnBlock": 0
+      },
+      "limitationsObserved": [
+        "Cursor .cursor/hooks.json uses process exit code 2 (stderr reason) to block tool calls and does not natively inject UserPromptSubmit stdout into prompt context without the companion .cursor/rules/agent-opt.mdc or MCP server."
+      ]
+    },
+    {
+      "platform": "openai-codex",
+      "displayName": "OpenAI Codex",
+      "hostBinaryInstalled": false,
+      "hostVersionInfo": "Not installed in PATH on evaluation host",
+      "status": "EXPERIMENTAL",
+      "statusRationale": "Generates both `.codex/hooks.json` and `.codex/config.toml` (`codex_hooks = true`) and passes subprocess stdin/stdout contract smoke tests, but the `codex` CLI binary is not installed on this evaluation host.",
+      "configFilesCreated": [
+        ".codex/hooks.json",
+        ".codex/config.toml"
+      ],
+      "configFilesCleanedOnUninstall": true,
+      "hookTests": {
+        "userPromptContextInjected": true,
+        "preToolDuplicateBlocked": true,
+        "stopBlocksUnverifiedCode": true,
+        "stopAllowsVerifiedCode": true,
+        "subprocessLatencyMs": 33.99,
+        "sampleStdoutPayload": "{\"decision\":\"block\",\"reason\":\"[AgentOpt Task Verification Gate — Status: NOT_VERIFIED] Task NOT_VERIFIED: Source file(s) [src/math.js] were modified after the last verification run (or no tests/build were executed). Run `npm test` to verify",
+        "sampleExitCodeOnBlock": 2
+      },
+      "limitationsObserved": [
+        "Codex lifecycle hooks require `codex_hooks = true` in `.codex/config.toml` alongside `.codex/hooks.json`."
+      ]
+    }
+  ],
+  "lsp": {
+    "environment": {
+      "os": "Darwin 25.6.0",
+      "arch": "arm64",
+      "nodeVersion": "v25.2.1",
+      "typescriptVersion": "Version 5.9.3"
+    },
+    "agentOptCli": {
+      "coldHookLatencyMs": 37.95,
+      "warmInProcessLatencyMs": 2.1,
+      "peakRssMb": 52.4
+    },
+    "tsserverLsp": {
+      "startupAndProjectLoadMs": 292.9,
+      "peakRssMb": 268.9
+    }
+  }
+}

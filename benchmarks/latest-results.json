@@ -1,0 +1,367 @@
+{
+  "generatedAt": "2026-10-18T18:35:12.828Z",
+  "runsPerTask": 15,
+  "totalTrials": 450,
+  "conditions": {
+    "baseline": {
+      "condition": "baseline",
+      "totalRuns": 90,
+      "taskCompletionRate": {
+        "mean": 55.56,
+        "stdDev": 49.97,
+        "ci95Low": 45.23,
+        "ci95High": 65.88
+      },
+      "correctnessRate": {
+        "mean": 55.56,
+        "stdDev": 49.97,
+        "ci95Low": 45.23,
+        "ci95High": 65.88
+      },
+      "regressionRate": {
+        "mean": 44.44,
+        "stdDev": 49.97,
+        "ci95Low": 34.12,
+        "ci95High": 54.77
+      },
+      "developerInterventionRate": {
+        "mean": 88.89,
+        "stdDev": 31.6,
+        "ci95Low": 82.36,
+        "ci95High": 95.42
+      },
+      "measuredInputTokens": {
+        "mean": 2399.37,
+        "stdDev": 883.87,
+        "ci95Low": 2216.76,
+        "ci95High": 2581.98
+      },
+      "measuredOutputTokens": {
+        "mean": 378.22,
+        "stdDev": 126.09,
+        "ci95Low": 352.17,
+        "ci95High": 404.27
+      },
+      "totalTokens": {
+        "mean": 2777.59,
+        "stdDev": 966.78,
+        "ci95Low": 2577.85,
+        "ci95High": 2977.33
+      },
+      "toolCalls": {
+        "mean": 6.47,
+        "stdDev": 2.39,
+        "ci95Low": 5.97,
+        "ci95High": 6.96
+      },
+      "failedToolCalls": {
+        "mean": 2.51,
+        "stdDev": 1.86,
+        "ci95Low": 2.13,
+        "ci95High": 2.89
+      },
+      "executionLatencyMs": {
+        "mean": 2724.1,
+        "stdDev": 1026.15,
+        "ci95Low": 2512.1,
+        "ci95High": 2936.1
+      },
+      "hookOverheadMs": {
+        "mean": 0,
+        "stdDev": 0,
+        "ci95Low": 0,
+        "ci95High": 0
+      },
+      "meanApiCostPerRunUsd": 0.01287,
+      "costPerSuccessfulTaskUsd": 0.02317
+    },
+    "context-only": {
+      "condition": "context-only",
+      "totalRuns": 90,
+      "taskCompletionRate": {
+        "mean": 82.22,
+        "stdDev": 38.45,
+        "ci95Low": 74.28,
+        "ci95High": 90.17
+      },
+      "correctnessRate": {
+        "mean": 82.22,
+        "stdDev": 38.45,
+        "ci95Low": 74.28,
+        "ci95High": 90.17
+      },
+      "regressionRate": {
+        "mean": 17.78,
+        "stdDev": 38.45,
+        "ci95Low": 9.83,
+        "ci95High": 25.72
+      },
+      "developerInterventionRate": {
+        "mean": 24.44,
+        "stdDev": 43.22,
+        "ci95Low": 15.52,
+        "ci95High": 33.37
+      },
+      "measuredInputTokens": {
+        "mean": 1451.3,
+        "stdDev": 534.9,
+        "ci95Low": 1340.79,
+        "ci95High": 1561.81
+      },
+      "measuredOutputTokens": {
+        "mean": 231.67,
+        "stdDev": 112.36,
+        "ci95Low": 208.45,
+        "ci95High": 254.88
+      },
+      "totalTokens": {
+        "mean": 1682.97,
+        "stdDev": 636.07,
+        "ci95Low": 1551.55,
+        "ci95High": 1814.38
+      },
+      "toolCalls": {
+        "mean": 3.5,
+        "stdDev": 1.92,
+        "ci95Low": 3.1,
+        "ci95High": 3.9
+      },
+      "failedToolCalls": {
+        "mean": 0.59,
+        "stdDev": 1.19,
+        "ci95Low": 0.34,
+        "ci95High": 0.83
+      },
+      "executionLatencyMs": {
+        "mean": 1515.62,
+        "stdDev": 911.08,
+        "ci95Low": 1327.39,
+        "ci95High": 1703.85
+      },
+      "hookOverheadMs": {
+        "mean": 3.39,
+        "stdDev": 0.8,
+        "ci95Low": 3.22,
+        "ci95High": 3.55
+      },
+      "meanApiCostPerRunUsd": 0.00783,
+      "costPerSuccessfulTaskUsd": 0.00952
+    },
+    "verification-only": {
+      "condition": "verification-only",
+      "totalRuns": 90,
+      "taskCompletionRate": {
+        "mean": 95.56,
+        "stdDev": 20.72,
+        "ci95Low": 91.27,
+        "ci95High": 99.84
+      },
+      "correctnessRate": {
+        "mean": 95.56,
+        "stdDev": 20.72,
+        "ci95Low": 91.27,
+        "ci95High": 99.84
+      },
+      "regressionRate": {
+        "mean": 4.44,
+        "stdDev": 20.72,
+        "ci95Low": 0.16,
+        "ci95High": 8.73
+      },
+      "developerInterventionRate": {
+        "mean": 17.78,
+        "stdDev": 38.45,
+        "ci95Low": 9.83,
+        "ci95High": 25.72
+      },
+      "measuredInputTokens": {
+        "mean": 2640.21,
+        "stdDev": 873.68,
+        "ci95Low": 2459.71,
+        "ci95High": 2820.72
+      },
+      "measuredOutputTokens": {
+        "mean": 383.22,
+        "stdDev": 81.31,
+        "ci95Low": 366.42,
+        "ci95High": 400.02
+      },
+      "totalTokens": {
+        "mean": 3023.43,
+        "stdDev": 936.5,
+        "ci95Low": 2829.95,
+        "ci95High": 3216.92
+      },
+      "toolCalls": {
+        "mean": 6.71,
+        "stdDev": 1.61,
+        "ci95Low": 6.38,
+        "ci95High": 7.04
+      },
+      "failedToolCalls": {
+        "mean": 1.6,
+        "stdDev": 0.83,
+        "ci95Low": 1.43,
+        "ci95High": 1.77
+      },
+      "executionLatencyMs": {
+        "mean": 2763.79,
+        "stdDev": 661.41,
+        "ci95Low": 2627.14,
+        "ci95High": 2900.44
+      },
+      "hookOverheadMs": {
+        "mean": 0.44,
+        "stdDev": 0.12,
+        "ci95Low": 0.41,
+        "ci95High": 0.46
+      },
+      "meanApiCostPerRunUsd": 0.01367,
+      "costPerSuccessfulTaskUsd": 0.0143
+    },
+    "v1-combined": {
+      "condition": "v1-combined",
+      "totalRuns": 90,
+      "taskCompletionRate": {
+        "mean": 97.78,
+        "stdDev": 14.82,
+        "ci95Low": 94.72,
+        "ci95High": 100.84
+      },
+      "correctnessRate": {
+        "mean": 97.78,
+        "stdDev": 14.82,
+        "ci95Low": 94.72,
+        "ci95High": 100.84
+      },
+      "regressionRate": {
+        "mean": 2.22,
+        "stdDev": 14.82,
+        "ci95Low": -0.84,
+        "ci95High": 5.28
+      },
+      "developerInterventionRate": {
+        "mean": 4.44,
+        "stdDev": 20.72,
+        "ci95Low": 0.16,
+        "ci95High": 8.73
+      },
+      "measuredInputTokens": {
+        "mean": 1676.67,
+        "stdDev": 539.77,
+        "ci95Low": 1565.15,
+        "ci95High": 1788.18
+      },
+      "measuredOutputTokens": {
+        "mean": 267.17,
+        "stdDev": 87.27,
+        "ci95Low": 249.14,
+        "ci95High": 285.2
+      },
+      "totalTokens": {
+        "mean": 1943.83,
+        "stdDev": 620.81,
+        "ci95Low": 1815.57,
+        "ci95High": 2072.09
+      },
+      "toolCalls": {
+        "mean": 4.22,
+        "stdDev": 1.63,
+        "ci95Low": 3.89,
+        "ci95High": 4.56
+      },
+      "failedToolCalls": {
+        "mean": 0.56,
+        "stdDev": 0.72,
+        "ci95Low": 0.41,
+        "ci95High": 0.7
+      },
+      "executionLatencyMs": {
+        "mean": 1820.32,
+        "stdDev": 722.08,
+        "ci95Low": 1671.14,
+        "ci95High": 1969.51
+      },
+      "hookOverheadMs": {
+        "mean": 3.33,
+        "stdDev": 0.64,
+        "ci95Low": 3.2,
+        "ci95High": 3.47
+      },
+      "meanApiCostPerRunUsd": 0.00904,
+      "costPerSuccessfulTaskUsd": 0.00924
+    },
+    "v2-improved": {
+      "condition": "v2-improved",
+      "totalRuns": 90,
+      "taskCompletionRate": {
+        "mean": 100,
+        "stdDev": 0,
+        "ci95Low": 100,
+        "ci95High": 100
+      },
+      "correctnessRate": {
+        "mean": 100,
+        "stdDev": 0,
+        "ci95Low": 100,
+        "ci95High": 100
+      },
+      "regressionRate": {
+        "mean": 0,
+        "stdDev": 0,
+        "ci95Low": 0,
+        "ci95High": 0
+      },
+      "developerInterventionRate": {
+        "mean": 2.22,
+        "stdDev": 14.82,
+        "ci95Low": -0.84,
+        "ci95High": 5.28
+      },
+      "measuredInputTokens": {
+        "mean": 1020.61,
+        "stdDev": 204.09,
+        "ci95Low": 978.45,
+        "ci95High": 1062.78
+      },
+      "measuredOutputTokens": {
+        "mean": 258.94,
+        "stdDev": 58.88,
+        "ci95Low": 246.78,
+        "ci95High": 271.11
+      },
+      "totalTokens": {
+        "mean": 1279.56,
+        "stdDev": 255.6,
+        "ci95Low": 1226.75,
+        "ci95High": 1332.36
+      },
+      "toolCalls": {
+        "mean": 3.98,
+        "stdDev": 1.09,
+        "ci95Low": 3.75,
+        "ci95High": 4.2
+      },
+      "failedToolCalls": {
+        "mean": 0.58,
+        "stdDev": 0.72,
+        "ci95Low": 0.43,
+        "ci95High": 0.73
+      },
+      "executionLatencyMs": {
+        "mean": 1660.74,
+        "stdDev": 417.2,
+        "ci95Low": 1574.55,
+        "ci95High": 1746.94
+      },
+      "hookOverheadMs": {
+        "mean": 3.88,
+        "stdDev": 0.7,
+        "ci95Low": 3.74,
+        "ci95High": 4.03
+      },
+      "meanApiCostPerRunUsd": 0.00695,
+      "costPerSuccessfulTaskUsd": 0.00695
+    }
+  }
+}

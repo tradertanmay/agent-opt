@@ -1,0 +1,40 @@
+name: Release Verification & Package
+
+on:
+  workflow_dispatch:
+    inputs:
+      create_draft_release:
+        description: 'Create a private draft GitHub release (never publishes to npm)'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'false'
+          - 'true'
+
+permissions:
+  contents: read
+
+jobs:
+  release:
+    name: Build, Verify & Pack Release Tarball
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run full verification suite
+        run: npm test
+
+      - name: Package release tarball (local artifact only — no npm publish)
+        run: npm pack --dry-run && npm pack
+

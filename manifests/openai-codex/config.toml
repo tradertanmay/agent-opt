@@ -1,0 +1,5 @@
+# BEGIN AGENT-OPT
+# AgentOpt Hooks Configuration for OpenAI Codex CLI (legacy: codex_hooks = true)
+[features]
+hooks = true
+# END AGENT-OPT

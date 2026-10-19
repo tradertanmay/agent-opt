@@ -1,0 +1,44 @@
+name: Bug Report
+description: Report a bug, regression, or platform hook issue in AgentOpt
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Coding Agent Platform
+      options:
+        - Google Antigravity 2.0
+        - Claude Code
+        - OpenAI Codex CLI
+        - Cursor
+        - MCP / Standalone CLI
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Active Optimizer Mode (`aopt status`)
+      options:
+        - FAST (default)
+        - BALANCED
+        - STRICT
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the unexpected behavior and provide the output of `npx agent-opt doctor`.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to Reproduce
+      placeholder: |
+        1. Run `npx agent-opt init`
+        2. Submit prompt "..."
+        3. Observe hook output
+    validations:
+      required: true

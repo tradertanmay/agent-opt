@@ -1,0 +1,19 @@
+name: Feature or Platform Request
+description: Propose an optimization improvement or platform adapter enhancement
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: What agent inefficiency, token waste, or failure pattern does this address?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed Solution
+      description: How should AgentOpt handle this without adding latency or breaking existing workflows?
+    validations:
+      required: true
