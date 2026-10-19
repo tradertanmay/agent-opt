@@ -1,15 +1,24 @@
-# AgentOpt (`aopt`)
+# AgentOpt — AI Coding Agent Optimizer (`aopt`)
 
-**AgentOpt — One plugin. Smarter coding agents. Fewer tokens.**
+**One plugin. Smarter coding agents. Fewer tokens.**
 
 [![Version: 0.1.0](https://img.shields.io/badge/Version-0.1.0-informational.svg)](./CHANGELOG.md)
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](./LICENSE)
 [![Node.js: >=20.0.0](https://img.shields.io/badge/Node.js-%3E%3D20.0.0-brightgreen.svg)](./package.json)
 [![Local-First: Zero Cloud Telemetry](https://img.shields.io/badge/Privacy-100%25_Local-success.svg)](./SECURITY.md)
 
-**AgentOpt** works directly with **Claude Code**, **OpenAI Codex**, **Cursor**, and **Google Antigravity**. It attaches to your coding agent's existing lifecycle hooks (`PreInvocation` / `UserPromptSubmit` / `sessionStart`, `PreToolUse` / `beforeReadFile`, `PostToolUse`, and `Stop`) to inject targeted AST symbol slices, block redundant file reads and duplicate writes, stop unproductive command loops, and verify tests before completion.
+**AgentOpt** is an open-source **AI coding agent optimization plugin** for **Claude Code**, **OpenAI Codex**, **Cursor**, and **Google Antigravity**.
 
-**No new agent to learn. No API keys or accounts required. 100% local execution (`<15ms` hook latency).**
+Improve coding-agent workflows with intelligent **context engineering**, **token optimization**, repository-aware code retrieval, redundant tool-call prevention, and optional automatic verification.
+
+### Why AgentOpt?
+- **Smarter context:** Find relevant code and reduce unnecessary repository exploration.
+- **Fewer tokens:** Avoid redundant file reads and unnecessary context.
+- **Faster execution:** Reduce wasted tool calls and repetitive operations.
+- **Better reliability:** Detect unproductive loops and optionally verify code changes.
+- **Works with your agent:** No new coding agent, account, or cloud service required (`<15ms` local hook latency).
+
+*Open source. Local-first. One plugin for multiple AI coding agents.*
 
 ### Supported Platforms & Compatibility Matrix
 

@@ -1,8 +1,16 @@
 {
   "name": "agent-opt",
   "version": "0.1.0",
-  "description": "Universal AI Coding Agent Optimizer — Make Claude Code, OpenAI Codex, Cursor, and Google Antigravity more accurate, faster, more reliable, and more token-efficient. No new agent. No workflow migration.",
+  "description": "Optimize Claude Code, Codex, Cursor & Antigravity with smarter context, fewer tokens, faster coding and automatic verification.",
   "license": "Apache-2.0",
+  "homepage": "https://github.com/tradertanmay/agent-opt#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tradertanmay/agent-opt.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tradertanmay/agent-opt/issues"
+  },
   "type": "module",
   "bin": {
     "aopt": "./dist/cli/index.js",
@@ -32,16 +40,27 @@
     "clean": "rm -rf dist"
   },
   "keywords": [
-    "ai-coding-agent",
+    "ai-agents",
+    "coding-agents",
     "claude-code",
+    "claude-code-plugin",
     "openai-codex",
+    "codex",
     "cursor",
+    "cursor-ai",
     "google-antigravity",
-    "context-optimization",
-    "verification",
-    "token-optimization",
+    "agentic-ai",
+    "llm",
     "mcp",
-    "developer-tools"
+    "model-context-protocol",
+    "developer-tools",
+    "context-engineering",
+    "context-optimization",
+    "token-optimization",
+    "llm-optimization",
+    "ai-coding",
+    "agent-optimization",
+    "typescript"
   ],
   "engines": {
     "node": ">=20.0.0"
