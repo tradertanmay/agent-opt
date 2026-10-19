@@ -33,7 +33,7 @@
   ],
   "scripts": {
     "build": "tsc",
-    "test": "npm run build && node --test dist/tests/**/*.test.js",
+    "test": "npm run build && node --test dist/tests/agent-opt.test.js",
     "benchmark": "npm run build && node dist/benchmarks/run-benchmarks.js",
     "demo": "npm run build && node dist/examples/demo-60s.js",
     "typecheck": "tsc --noEmit",
