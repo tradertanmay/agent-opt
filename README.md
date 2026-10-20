@@ -55,7 +55,7 @@ npm run demo
 
 ## 3. Installation
 
-### Option A: Direct Install from GitHub Release (`v0.1.0` — Available Today)
+### Option A: Direct Install from GitHub Release
 ```bash
 npm install https://github.com/tradertanmay/agent-opt/releases/download/v0.1.0/agent-opt-0.1.0.tgz
 npx agent-opt init
@@ -72,7 +72,7 @@ cd /path/to/your-project
 aopt init
 ```
 
-### Option C: Via Public npm Registry (Once Published to npm)
+### Option C: Via Public npm Registry
 ```bash
 npx agent-opt init
 ```

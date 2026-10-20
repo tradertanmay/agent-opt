@@ -15,7 +15,7 @@ AgentOpt installs into your project in under two minutes with zero external serv
 
 ## 2. One-Command Installation
 
-### Option A: Via `npx` (Once Published to npm)
+### Option A: Via `npx`
 Run the interactive installer inside any repository:
 ```bash
 npx agent-opt init
@@ -26,7 +26,7 @@ Or install non-interactively for all detected platforms in default `FAST` mode:
 npx agent-opt init --yes
 ```
 
-### Option B: From Local Source Clone (Immediate Local Usage)
+### Option B: From Source Clone
 ```bash
 git clone https://github.com/tradertanmay/agent-opt.git
 cd agent-opt
